@@ -1,13 +1,205 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html{
+    font-family: 'Barlow', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+table{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25rem;
 }
+
+::placeholder{
+    text-align: center;
+}
+
+.top-section{
+    padding: 2rem 3rem;
+    background-color: #aad3e9;
+    
+}
+
+.navbar{
+    
+    
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+}
+
+.navbar .heading{
+    font-size: 1.5rem;
+}
+
+.nav-items{
+    margin-bottom: 20%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-items:hover{
+    color: #fff !important;
+}
+
+.description{
+    margin-top: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-align: center;
+}
+
+.desc{
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+.icon{
+    padding-right: 0.7rem;
+}
+
+.gpa-table{
+ 
+ padding: 1rem 2rem;
+ margin: 1rem;
+
+}
+
+.create-area{
+    text-align: center;
+    padding: 1rem;
+}
+
+form {
+background-color: #fff;
+padding: 1rem;
+font-size: 1.2rem;
+border-radius: 1rem;
+box-shadow: 1px 1px 10px 2px gray;
+  }
+
+  form input{
+      position: relative;
+      text-align: center;
+      border: none;
+      font-size: 120%;
+      padding: 0.5rem;
+      outline: none;
+      width: 50%;
+  }
+
+  form .subject {
+      width: 70%;
+padding-bottom: 2rem;
+padding-top: 2rem;
+  }
+
+  form .credits{
+  font-size: 1rem;
+  padding-bottom: 2rem;  
+  }
+
+  form .marks{
+ font-size: 1rem;
+ padding-bottom: 2rem;
+  }
+
+  form select {
+      position: relative;
+      outline: none;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      width: 30%;
+      border-radius: 1rem;
+  }
+
+  form label{
+    padding: 0.5rem;
+    position: relative;
+  }
+
+  form button {
+   border-radius: 50%;
+   position: relative;
+   bottom: -2rem;
+   cursor: pointer;
+   outline: none;
+   background-color: gray;
+   border: none;
+   height: 2.3rem;
+   width: 2.3rem;
+   text-align: center;
+  }
+
+  .subject-note{
+    display: inline-block;
+    width: 40%;
+    background-color: hotpink;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem 0;
+    box-shadow: 1px 1px 10px 1px gray;
+  }
+
+  .all-subjects{
+      text-align: center;
+  }
+
+  .gpa-calculate{
+      text-align: center;
+      padding: 2rem;
+  }
+
+  .gpa{
+font-size: 2rem;
+
+  }
+
+  .gpa-btn{
+      font-size: 1.2rem;
+      outline: none;
+      background-color: #aad3e9;
+      border: solid 1px;
+      border-radius: 2rem;
+      cursor: pointer;
+      padding: 0.25rem 1rem;
+  }
+
+  .gpa-btn:hover{
+      background-color: gray;
+      color: white;
+  }
+
+  .prev-gpa{
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1.2rem;
+      text-align: center;
+      outline: none;
+      box-shadow: 1px 1px 10px 1px gray;
+  }
+
+  .delete{
+     background-color: inherit;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding-top: 1rem;
+     font-size: 1.025rem;
+
+  }
+
+  .delete:hover{
+      color: white;
+  }
+
+  @media (max-width: 800px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+
+    .subject-note{
+        width: 100%;
+    }
+
+    html{
+        font-size: 0.8rem;
+    }
+  }
