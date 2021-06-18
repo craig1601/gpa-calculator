@@ -143,7 +143,7 @@ function App() {
             <div className="desc">GPA is calculated based on the following scheme</div>
                 <GpaTable />
                
-                {inputType && <input id="GPA" type="text" placeholder="Previous GPA" className="prev-gpa" value={prevGpa} onChange={handleGpaChange}/>}
+                {inputType && <input id="GPA" type="text" placeholder="Enter CGPA" className="prev-gpa" value={prevGpa} onChange={handleGpaChange}/>}
                 {inputType && <CreateArea whenClicked={handleClick}/> }
                 {!inputType && <LabCreateArea whenClicked={handleLabClick}/> } 
                 <p><a onClick={changeInput} className="gpa-btn">{inputType ? "Enter Lab Marks" : "Enter Subject Marks"}</a></p>       
